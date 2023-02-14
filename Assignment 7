@@ -1,0 +1,49 @@
+// 1.Write a program to find the  fibonnaci series.
+
+
+import java.util.Scanner;
+
+public class Assignment {
+    public static void main(String[] args) {
+        int a = 0;
+        int b =1;
+
+        Scanner sc = new Scanner(System.in);
+        int c = sc.nextInt();
+        int d;
+        System.out.print(a +" " +b);
+        for (int i=3;i<=c;i++){
+            d = a+b;
+            System.out.print(" "+d);
+            a=b;
+            b=d;
+        }
+    }
+}
+
+
+// 2.Write a program to calculate HCF of two numbers.
+
+
+import java.util.Scanner;
+
+public class Assignment {
+    public static void main(String[] args) {
+        int hcf = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter first number: ");
+        int a = sc.nextInt();
+        System.out.println("enter second number: ");
+        int b = sc.nextInt();
+        for (int i=1;i<=a||i<=b;i++){
+            if (a%i ==0 && b%i ==0){
+                hcf = i;
+            }
+
+        }
+        System.out.println("hcf is : " +hcf);
+        }
+    }
+
+
+
