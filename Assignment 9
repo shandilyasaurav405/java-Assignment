@@ -1,0 +1,58 @@
+//1.write a program which takes the month number as an input and display number of days in that month.//
+
+
+import java.io.*;
+import java.util.*;
+
+class Main{
+
+    public static void main(String args[]){
+        
+        int arr[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+        int month = 12, year=2012;
+    
+        //For checking leap year
+        if(month==2 && ((year%400==0) || ((year%100!=0)&&(year%4==0))))
+            System.out.println("Number of days is "+ arr[month-1]+1);
+    
+        else System.out.println("Number of days is "+arr[month-1]);
+            
+    }
+}
+
+
+//write menu driven program with the following options:
+a.add
+b.sub
+c.multiply
+d.division
+e.exit//
+
+
+import java.util.Scanner;
+public class arra2{
+public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int A= sc.nextInt();
+    int B= sc.nextInt();
+    System.out.println("Enter choice of operation: " );
+    int t=sc.nextInt();
+    if (t==1){
+        System.out.println( A+B);;
+    }
+    else if(t==2){
+        System.out.println( A-B);;
+    }
+    else if (t==3){
+        System.out.println(A*B);
+
+    }
+    else if(t==4){
+        System.out.println(A/B);
+    }
+    else{
+        System.out.println("exit");
+    }
+
+        }
+    }
